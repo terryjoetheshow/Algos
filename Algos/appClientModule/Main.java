@@ -1,3 +1,5 @@
+import java.util.List;
+import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,5 +13,12 @@ public class Main {
 	public Main() {
 		super();
 	}
+	
+	public ArrayList<Double> TopDownMergeSort() {
 
+		ArrayList<Double> list = new ArrayList<Double>();
+		
+		return list;
+	}
+	
 }
