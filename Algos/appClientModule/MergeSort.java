@@ -1,9 +1,7 @@
 
-public class MergeSort {
+public class MergeSort extends Sort {
 
-	private int[] array;
 	private int[] tempMergArr;
-	private int length;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
