@@ -7,8 +7,8 @@ public class MergeSort extends Sort {
 		// TODO Auto-generated method stub
 		//int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
 		int[] inputArr = {-5, 1, -5, 1, 5, 1};
-		MergeSort mms = new MergeSort();
-		mms.sort(inputArr);
+		MergeSort s = new MergeSort();
+		s.sort(inputArr);
 		for (int i:inputArr) {
 			System.out.print(i + " ");
 		}
