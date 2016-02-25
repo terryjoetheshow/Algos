@@ -6,7 +6,7 @@ public class MergeSort extends Sort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
-		int[] inputArr = {-5, 1, -5, 1, 5, 1};
+		int[] inputArr = {4, 4, 4, 4};
 		MergeSort s = new MergeSort();
 		s.sort(inputArr);
 		for (int i:inputArr) {
@@ -57,6 +57,14 @@ public class MergeSort extends Sort {
             }
             k++;
         }
+        
+        //only need to iterate the left side of the merge
+        //because, if i > midIndex, it means whatever remains on the right side must be bigger than the rest. 
+        //so do not need to do anything more, because the remainders are sorted already
+        //if i <= midIndex, it means, whatever remains on the left side are all bigger than the rest.
+        //but they're not in the correct spot in the final array, so move them all over to fill the remaining slots.
+        //They are already sorted, so can move in chunks.
+ 
         while (i <= midIndex) {
             array[k] = tempMergArr[i];
             k++;
