@@ -1,3 +1,7 @@
+//Time Complexity:
+//Best: O(n)
+//Avg: O(n^2)
+//Worse: O(n^2)
 
 public class BubbleSort extends Sort {
 	

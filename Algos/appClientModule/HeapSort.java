@@ -1,3 +1,7 @@
+//Time complexity
+//Best: O(n log(n))
+//Avg: O(n log(n))
+//Worst: O(n log(n))
 
 public class HeapSort extends Sort{
 
@@ -24,15 +28,16 @@ public class HeapSort extends Sort{
 	}
 
 	public void doHeapSort() {
-		heapify();
+		heapify(); //After heapify, max number will be in the root node
 		int end = length - 1;
 		while (end > 0) {
-			swap(end, 0);
-			end--;
-			siftDown(0, end);
+			swap(end, 0); //swap max number to the last node
+			end--; //take out the last node
+			siftDown(0, end); //heapify to make a heap so the max number is at the root.  
 		}
 	}
 	
+	//start from the lowest parent node to root node in the tree, perform siftDown
 	public void heapify() {
 		int start = iParent(length-1);
 		while (start>= 0) {
