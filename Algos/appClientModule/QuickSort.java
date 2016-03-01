@@ -1,3 +1,9 @@
+//Time Complexity
+//Best: O(n log(n))
+//Avg: O(n log(n))
+//Worst: O(n^2)
+
+//Space Complexity: O(n log(n))
 
 public class QuickSort extends Sort {
 

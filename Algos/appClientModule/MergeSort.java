@@ -1,3 +1,9 @@
+//Time Complexity
+//Best: O(n log(n))
+//Avg: O(n log(n))
+//Worst: O(n log(n))
+
+//Space Complexity: O(n)
 
 public class MergeSort extends Sort {
 
