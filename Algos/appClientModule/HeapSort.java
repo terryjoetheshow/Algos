@@ -5,8 +5,6 @@
 
 public class HeapSort extends Sort{
 
-	private static int[] outputArr;
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};

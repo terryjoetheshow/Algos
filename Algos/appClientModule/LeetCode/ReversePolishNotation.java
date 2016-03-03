@@ -1,4 +1,4 @@
-package DataStructure;
+package LeetCode;
 
 import java.util.Stack;
 

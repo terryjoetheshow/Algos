@@ -1,4 +1,4 @@
-package DataStructure;
+package LeetCode;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -16,6 +16,8 @@ public class WordLadder {
 		int count = 0;
 		wordDict.add(endWord);
 		char[] currWord = startWord.toCharArray();
+		
+		//Queue queue = new Queue();
 		
 		//Need to keep a queue of all the words currently considered at a particular breadth.  
 		for (int i = 0; i < currWord.length; i++){ //change 1 letter at a time
