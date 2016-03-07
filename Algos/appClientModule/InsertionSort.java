@@ -14,9 +14,7 @@ public class InsertionSort extends Sort{
 		int[] inputArr = {-5, 1, -5, 1, 5, 1};
 		InsertionSort s = new InsertionSort();
 		s.sort(inputArr);
-		for (int i:inputArr) {
-			System.out.print(i + " ");
-		}
+		s.DisplayArray(inputArr);
 		System.out.println("Insertion sort");
 	}
 

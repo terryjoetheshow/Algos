@@ -9,5 +9,11 @@ public abstract class Sort {
 	public int[] array;
 	public int length;
 	
-	public abstract void sort(int inputArr[]);	
+	public abstract void sort(int inputArr[]);
+	
+	protected void DisplayArray(int[] inputArr) {
+		for (int i:inputArr) {
+			System.out.print(i + " ");
+		}
+	}
 }

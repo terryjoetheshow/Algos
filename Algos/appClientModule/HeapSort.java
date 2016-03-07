@@ -12,9 +12,7 @@ public class HeapSort extends Sort{
 		//int[] inputArr = {6, 5, 1, 3, 8, 4, 7, 9, 2};
 		HeapSort s = new HeapSort();
 		s.sort(inputArr);
-		for (int i:inputArr) {
-			System.out.print(i + " ");
-		}
+		s.DisplayArray(inputArr);
 		System.out.println("heap sort");
 	}
 

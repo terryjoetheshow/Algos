@@ -11,15 +11,11 @@ public class MergeSort extends Sort {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
-		int[] inputArr = {4, 4, 4, 4};
+		int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
+		//int[] inputArr = {4, 4, 4, 4};
 		MergeSort s = new MergeSort();
 		s.sort(inputArr);
-		for (int i:inputArr) {
-			System.out.print(i + " ");
-		}
-			
-		
+		s.DisplayArray(inputArr);
 		System.out.println("Merge sort");
 	}
 

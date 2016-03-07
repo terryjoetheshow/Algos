@@ -3,6 +3,10 @@
 //Avg: O(n^2)
 //Worse: O(n^2)
 
+//each loop, move the current biggest to the right 
+//until reaching a bigger one, then move to bigger one right until 
+//the biggest one is at the end
+
 public class BubbleSort extends Sort {
 	
 	public static void main(String[] args) {
@@ -11,9 +15,7 @@ public class BubbleSort extends Sort {
 		//int[] inputArr = {-5, 1, -5, 1, 5, 1};
 		BubbleSort s = new BubbleSort();
 		s.sort(inputArr);
-		for (int i:inputArr) {
-			System.out.print(i + " ");
-		}
+		s.DisplayArray(inputArr);
 		System.out.println("Bubble sort");
 	}
 
