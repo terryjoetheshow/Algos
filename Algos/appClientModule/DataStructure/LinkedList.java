@@ -1,5 +1,25 @@
 package DataStructure;
 
+//Nodes in linkedList class
+class Node {
+	
+	public int data;
+	public Node next;
+	
+	public Node(int data, Node next) {
+		this.data = data;
+		this.next = next;
+	}
+	
+	public int getData() {
+		return data;
+	}
+	
+	public Node getNext() {
+		return next;
+	}
+}
+
 public class LinkedList {
 
 	public static void main(String[] args) {
@@ -97,18 +117,6 @@ public class LinkedList {
 			curr = curr.next;
 		}
 		System.out.println("size = " + size);
-	}
-	
-	//Nodes in linkedList class
-	private class Node {
-		
-		private int data;
-		private Node next;
-		
-		public Node(int data, Node next) {
-			this.data = data;
-			this.next = next;
-		}
 	}
 }
 
