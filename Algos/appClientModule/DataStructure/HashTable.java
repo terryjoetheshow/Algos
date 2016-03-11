@@ -1,5 +1,8 @@
 package DataStructure;
 
+//load factor n/k: n is size of data, k is the number of buckets.  
+//searching through a chained linkedList of hashed nodes should at most take n/k, which is big O(n)
+
 class HashEntry {
 
 	private int key;
