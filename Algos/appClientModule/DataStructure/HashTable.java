@@ -7,7 +7,7 @@ class HashEntry {
 
 	private int key;
 	private int value;
-	public HashEntry next;
+	HashEntry next;
 	
 	HashEntry(int key, int value) {
 		this.key = key;
