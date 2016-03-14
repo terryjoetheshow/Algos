@@ -1,0 +1,36 @@
+		Thread 1
+		---------
+		x = 10;
+		---------
+		
+		Thread 2
+		---------
+		if (x == 1) {
+			//if a context switch happens here, x == 1 is no longer guaranteed
+			y = x * 10;
+		}
+		---------
+		sychronized(this)
+		
+		
+		Thread 1
+		--------
+		synchronized(lock_1)
+		{
+			...some operations here
+			
+			synchronized(lock_2)
+			
+			...some operations
+		}
+		
+		Thread 2
+		--------
+		synchronized(lock_2)
+		{
+			...some operations here
+			
+			synchronized(lock_1)
+			
+			...some operations
+		}
